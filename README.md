@@ -1,5 +1,5 @@
 
-![image](https://www.google.com/imgres?imgurl=https%3A%2F%2Fmiro.medium.com%2Fmax%2F2000%2F1*9Ws3BGmmYZWoBpfKbdDUQA.png&imgrefurl=https%3A%2F%2Fmedium.com%2F%40nicosingh&tbnid=bigbfr3M-NwxRM&vet=12ahUKEwi5p9_NmdruAhVBYxoKHQvFAS4QMygAegUIARCFAQ..i&docid=_KzxSnUHKBdR9M&w=2625&h=1489&q=terraform%20eks&ved=2ahUKEwi5p9_NmdruAhVBYxoKHQvFAS4QMygAegUIARCFAQ)
+
 
 The usage of official Terraform modules brings us simplicity of coding AWS components following the best practices from verified providers
 
