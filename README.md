@@ -6,14 +6,11 @@ Requirements
 AWS Account, with programatic access. We will use these credentials to configure some environment variables later.
 Terraform CLI or Terraform Cloud. In this document we use 0.13 version,
 
-Terraform Configuration
-
+#Terraform Configuration#
 VPC
-
-the file vpc.tf creates a vpc where will isolate our EKS resources with subnets on each avaialbilty zones, a single nat gateway and tags required by EKS.
+The file vpc.tf creates a vpc where will isolate our EKS resources with subnets on each avaialbilty zones, a single nat gateway and tags required by EKS.
 
 EKS Cluster
-
 The eks-cluster.tf file creates the following resources:
 
 An EC2 autoscaling group for Kubernetes, composed by Spot instances autoscaled out/down based on CPU average usage.
@@ -38,7 +35,6 @@ RBAC Access
 The rbac.tf file - this configuration block grants access to see some Kubernetes objects (like pods, deployments, ingresses and services) as well as executing commands in running pods and create proxies to local ports.
 
 APP Deployment
-
 The folder App/ deploys a very small container into our new Kubernetes Cluster using Helm
 
 where;
