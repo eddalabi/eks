@@ -1,4 +1,4 @@
-<img src="./app/eks.png">
+<img src="./app/EKS.png">
 
 
 The usage of official Terraform modules brings us simplicity of coding AWS components following the best practices from verified providers
