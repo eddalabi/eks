@@ -36,3 +36,18 @@ The namespaces.tf file - is to define some Kubernetes namespaces to separate our
 
 RBAC Access
 The rbac.tf file - this configuration block grants access to see some Kubernetes objects (like pods, deployments, ingresses and services) as well as executing commands in running pods and create proxies to local ports.
+
+APP Deployment
+The folder App/ deploys a very small container into our new Kubernetes Cluster using Helm
+
+where;
+
+      KUBERNETES_CLUSTER = my-app-eks
+      APP_NAME           = sample-app
+      KUBERNETES_NAMESPACE = sample-apps
+      
+      Use Helm to deploy sample app to kubernetes cluster
+    - aws eks --region ${AWS_DEFAULT_REGION} update-kubeconfig
+      --name ${KUBERNETES_CLUSTER}
+    - helm upgrade --install ${APP_NAME} --namespace ${KUBERNETES_NAMESPACE}
+      helm/ --values helm/config/values-${CI_ENVIRONMENT_NAME}.yaml
