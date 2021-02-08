@@ -1,6 +1,6 @@
 <img src="./app/EKS.png">
 
-The image gives an overview of the architecture and also other services that can be integrated i.e. CI/CD, Gitlab CI or Github Actions. terraform backend.
+The image gives an overview of the architecture and also other services that can be integrated i.e. CI/CD pipeline - (Gitlab CI/Github Actions), terraform backend.
 
 
 The usage of official Terraform modules brings us simplicity of coding AWS components following the best practices from verified providers
