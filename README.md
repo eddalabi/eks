@@ -2,15 +2,15 @@
 
 The usage of official Terraform modules brings us simplicity of coding AWS components following the best practices from verified providers
 
-<p>Requirements</p>
+<h1>Requirements</h1>
 AWS Account, with programatic access. We will use these credentials to configure some environment variables later.
 Terraform CLI or Terraform Cloud. In this document we use 0.13 version,
 
-<p>Terraform Configuration</p>
+<h2>Terraform Configuration</h2>
 <p>VPC</p>
 The file vpc.tf creates a vpc where will isolate our EKS resources with subnets on each avaialbilty zones, a single nat gateway and tags required by EKS.
 
-<p>EKS Cluster</p>
+<h2>EKS Cluster</h2>
 
 The eks-cluster.tf file creates the following resources:
 
