@@ -19,6 +19,8 @@ An EKS cluster, with two groups of users (called “admins” and “developers�
 An EC2 https://github.com/aws/aws-node-termination-handler for Kubernetes, which takes care of reallocating Kubernetes objects when Spot instances get automatically terminated by AWS. This installation uses Helm to ease things up.
 And we also define some Kubernetes/Helm Terraform providers, to be used later to install & configure stuff inside our Cluster using Terraform code.
 
+Note: The user IDs displayed in the eks-variables files are fictitious, and of course they have to be customized according to the user groups present in your AWS account. Have in mind that these usernames do not have to exist as AWS IAM identities at the moment of creating the EKS Cluster nor assigning RBAC accesses, since they will live inside the Kubernetes Cluster only. IAM/Kubernetes usernames correlation is handled by AWS CLI at the moment of authenticating with the EKS Cluster.
+
 <h2>Load Balancer</h2>
 The ingress.tf file -  The creation of the ELB will be handled by a new Kubernetes Service deployed through a Helm Chart of an Nginx Ingress deployment:
 
