@@ -51,4 +51,4 @@ where;
     - aws eks --region ${AWS_DEFAULT_REGION} update-kubeconfig
       --name ${KUBERNETES_CLUSTER}
     - helm upgrade --install ${APP_NAME} --namespace ${KUBERNETES_NAMESPACE}
-      helm/ --values helm/config/values-${CI_ENVIRONMENT_NAME}.yaml
+      helm/ --values helm/config/values-development.yaml
